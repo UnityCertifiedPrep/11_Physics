@@ -31,7 +31,6 @@ public class BalisticSolver : MonoBehaviour {
             var theta1 = Mathf.Atan((v * v + Mathf.Sqrt(descriminant)) / (g * x));
             var theta2 = Mathf.Atan((v * v - Mathf.Sqrt(descriminant)) / (g * x));
             var theta = Mathf.Min(theta1, theta2);
-            print(theta*Mathf.Rad2Deg);
             return Vector3.RotateTowards(horizontalVector, Vector3.up, theta, Mathf.Infinity);
         }
 
