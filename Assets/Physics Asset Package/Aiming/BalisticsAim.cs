@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TrajectorySolver : MonoBehaviour {
+public class BalisticsAim : MonoBehaviour {
 
     public BalisticSolver solver;
 
