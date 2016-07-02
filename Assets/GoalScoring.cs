@@ -3,6 +3,7 @@ using System.Collections;
 
 public class GoalScoring : MonoBehaviour
 {
+    public Highlighter highlighter;
 
     // Use this for initialization
     void Start()
@@ -18,6 +19,9 @@ public class GoalScoring : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        print("Score!");
+        if (highlighter)
+        {
+            highlighter.Highlight();
+        }
     }
 }
