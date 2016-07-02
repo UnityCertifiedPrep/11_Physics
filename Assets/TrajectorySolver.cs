@@ -3,6 +3,8 @@ using System.Collections;
 
 public class TrajectorySolver : MonoBehaviour {
 
+    public BalisticSolver solver;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -14,7 +16,7 @@ public class TrajectorySolver : MonoBehaviour {
         RaycastHit hitInfo;
         if (Physics.Raycast(ray, out hitInfo))
         {
-            print(hitInfo.point);
+            solver.target = hitInfo.point;
         }
     }
 }
