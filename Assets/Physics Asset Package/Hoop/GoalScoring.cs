@@ -19,7 +19,6 @@ public class GoalScoring : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        print("Goal Scored!");
         if (highlighter)
         {
             highlighter.Highlight();
