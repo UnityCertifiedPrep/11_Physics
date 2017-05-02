@@ -58,6 +58,3 @@
 + Play testing and tweaking our game.
 + Adding multiple goals and adjusting fire speed.
 + Adding a cross-hair and revising UI.
-
----
-Find out more about our [Unity Certification Preparation Course](https://www.udemy.com/unitycert?couponCode=GitHubDiscount).
